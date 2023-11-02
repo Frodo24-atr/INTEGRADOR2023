@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+  </style>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="icono-pestaña.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="responsive-loggin.css">
+    <link rel="import" href="pagina.html">
+    <title>M.H</title>
+</head>
+<body class="background" background="contratar-electricista.jpg">
+  <div class="title"> <H1>FRANCO MARTINEZ  TECNICO</H1><H2>SERVICIOS DE MANTENIMIENTO PARA EL HOGAR</H2></div>
+  <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div class="btn">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar</button>
+                <button type="button" class="toggle-btn" onclick="register()">Registrarse</button>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="/ICONOS LOGGIN/facebook.png"></a>
+            <a href="https://www.google.com/intl/es/account/about/"><img src="/ICONOS LOGGIN/google.png"></a>
+            <a href="https://twitter.com/?lang=en"><img src="/ICONOS LOGGIN/twitter.png"></a>
+        </div>
+        <form id="login" class="input-group">
+          <div class="form-register">
+            <input type="text" class="input-field" placeholder="Nombre" required>
+            <input type="password" class="input-field" placeholder="Contraseña" required>
+          </div>
+          <div class="me-olvide-xd">
+            <input type="checkbox" class="check-box"><span>Recordar Contraseña</span>
+          </div>
+            <button type="submit" class="submit-btn"><a href="pagina.html">Iniciar Sesion</a></button>
+        </form>
+        <form id="register" class="input-group">
+          <div class="form-register">
+            <input type="text" class="input-field" placeholder="Nombre" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+          </div>
+          <div class="me-olvide-xd">           
+            <input type="checkbox" class="check-box"><span>Acepto los terminos y condiciones</span>
+          </div>
+            <button type="submit" class="submit-btn"><a href="pagina.html">Registrarse</a></button>
+        </form>
+    </div>
+</div>
+<script>
+   var x = document.getElementById("login");
+   var y = document.getElementById("register");
+   var z = document.getElementById("btn");
+   function register(){
+    x.style.left = "-450px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+   }
+   function login(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+   }
+</script>
+</div>
+</body>
+</html>
